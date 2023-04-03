@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="program_user_mapping_form" model="ir.ui.view">
+        <field name="name">program.user.mapping.form</field>
+        <field name="model">g2p.program</field>
+        <field name="inherit_id" ref="g2p_programs.view_program_list_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//notebook" position="inside">
+                <page string="Program Users">
+                    <group>
+                        <field
+                            name="assigned_user_mapping"
+                            nolabel="1"
+                            context="{'default_program_id':active_id}"
+                        >
+                            <tree>
+                                <field name="program_id" invisible="1" />
+                                <field name="user_id" />
+                            </tree>
+                            <form string="Program user mapping">
+                                <group>
+                                    <field name="program_id" invisible="1" />
+                                    <field name="user_id" />
+                                </group>
+                            </form>
+                        </field>
+                    </group>
+                </page>
+            </xpath>
+        </field>
+    </record>
+</odoo>
