@@ -1,0 +1,26 @@
+{
+    "name": "G2P Programs: User Mapping",
+    "category": "G2P",
+    "version": "15.0.1.1.0",
+    "sequence": 1,
+    "author": "OpenG2P",
+    "website": "https://github.com/openg2p/openg2p-program",
+    "license": "Other OSI approved licence",
+    "depends": ["g2p_programs"],
+    "development_status": "Alpha",
+    "data": [
+        "security/record_rules.xml",
+        "security/ir.model.access.csv",
+        "views/program_user_mapping.xml",
+        "views/res_users.xml",
+    ],
+    "assets": {
+        "web.assets_backend": [],
+        "web.assets_qweb": [],
+    },
+    "demo": [],
+    "images": [],
+    "application": True,
+    "installable": True,
+    "auto_install": False,
+}

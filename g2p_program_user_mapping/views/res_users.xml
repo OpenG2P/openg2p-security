@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="res_users_program_mapping_form" model="ir.ui.view">
+        <field name="name">res.users.program.mapping.form</field>
+        <field name="model">res.users</field>
+        <field name="inherit_id" ref="base.view_users_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//notebook" position="inside">
+                <page string="Programs">
+                    <group>
+                        <field name="assigned_program_mapping" nolabel="1" readonly="1">
+                            <tree>
+                                <field name="program_id" />
+                                <field name="user_id" invisible="1" />
+                            </tree>
+                        </field>
+                    </group>
+                </page>
+            </xpath>
+        </field>
+    </record>
+
+
+</odoo>

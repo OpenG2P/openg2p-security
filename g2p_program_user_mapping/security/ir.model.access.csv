@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+g2p_program_user_mapping_admin,Program User Mapping Admin Access,g2p_program_user_mapping.model_g2p_program_user_mapping,g2p_registry_base.group_g2p_admin,1,1,1,1
+g2p_program_user_mapping_program_manager,Program User Mapping program manager Access,g2p_program_user_mapping.model_g2p_program_user_mapping,g2p_programs.g2p_program_manager,1,0,1,0
+g2p_program_user_mapping_base_user,Program User Mapping base user Access,g2p_program_user_mapping.model_g2p_program_user_mapping,base.group_user,1,0,0,0
